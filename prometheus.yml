@@ -8,7 +8,7 @@ scrape_configs:
         labels:
           instance: "$ServerName"
 
-  - job_name: "$ServerName"
+  - job_name: "$Company $ServerName"
     metrics_path: /probe
     params:
       module: [icmp]
